@@ -1,0 +1,29 @@
+= Kot-Line Intranet Analyse
+:author: CAYE Damien, FALZONE Tonino, NAUGUET Benjamin
+:docdate: 2022-11-21
+:asciidoctor-version:1.1
+:description: Projet pédagogique d'initiation à Kotlin
+:icons: font
+:listing-caption: Listing
+:toc-title: Sommaire
+:toc: left
+:toclevels: 4
+
+= Thème
+
+Développer un Intranet pour une entreprise
+
+= Objectif
+
+Définition du domaine métier représenter par un diagramme de classe des entités métier.
+
+Choix(et argumentation) de la librairie logicielle que nous avons retenue pour lire un document CSV, à partir de l'article: https://www.baeldung.com/kotlin/csv-files
+
+La façon dont nous comptons implémenter les 3 contraintes de sélection
+
+Présentation de la stratégie retenue par notre équipe concernant la gestion des données à problème.
+
+La façon dont nous envisagons gérer le cas où l’utilisateur soumet les mêmes données en téléchargement, dans le but d’éviter d’inscrire plusieurs fois les mêmes données dans la base de données.
+
+Identification de risques d’utilisateurs malveillants (Evil User Story ou Abuser Story).
+
