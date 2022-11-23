@@ -13,9 +13,9 @@
 
 Développer un Intranet pour une entreprise
 
-== Objectif
+== Objectif et Contraintes
 
-Définition du domaine métier représenté par un diagramme de classe des entités métier.
+Définition du domaine métier représenté par un diagramme de classe des entités métiers.
 
 Choix (et argumentation) de la librairie logicielle que nous avons retenue pour lire un document CSV, à partir de l'article: https://www.baeldung.com/kotlin/csv-files
 
@@ -27,7 +27,10 @@ La façon dont nous envisagons de gérer le cas où l’utilisateur soumet les m
 
 Identification de risques d’utilisateurs malveillants (Evil User Story ou Abuser Story).
 
-== Contraintes
+== Solutions
+
+== Fonctionnalitées
+Nous avons réunis toutes les fonctionnalitées que devra contenir l'intranet sous forme d'un schéma USE CASE.
 
 [plantuml]
 ----
@@ -45,3 +48,4 @@ MyG -->(Consulter fichiers)
 
 @enduml
 ----
+
