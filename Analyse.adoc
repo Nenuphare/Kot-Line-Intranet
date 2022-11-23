@@ -27,3 +27,19 @@ La façon dont nous envisagons de gérer le cas où l’utilisateur soumet les m
 
 Identification de risques d’utilisateurs malveillants (Evil User Story ou Abuser Story).
 
+== Contraintes
+
+[plantuml]
+----
+@startuml
+
+:Gestionnaire: as MyG
+MyG --> (Consulter stats)
+MyG --> (Consulter données BDD)
+MyG --> (Déposer fichiers)
+MyG --> (Modifier fichiers)
+MyG -->(Consulter fichiers)
+
+
+@enduml
+----
