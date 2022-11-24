@@ -40,8 +40,11 @@ Les contraintes de sélection sont au nombre de 3 et sont les suivantes:
 * La taille des clients
 * Le numéro de carte de crédit
 
-Or il y'a des problème dans les données comme la taille qui ont des unités de mesures différentes selon les clients (Inch et centimètre).
+Or il y'a des problème dans les données comme la taille qui ont des unités de mesures différentes selon les clients (Inch et centimètre). +
 Il y a aussi des doublons de numéro de carte de crédit alors que le système ne permet pas le partage de carte de crédit.
+
+Nous avons donc décider d'implémenter ces contraintes de sélections sur une liste de tout les éléments comme des filtres.
+Ainsi nous allons 
 
 
 === Gestion des données hors contraintes
