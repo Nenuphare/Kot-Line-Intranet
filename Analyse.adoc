@@ -45,7 +45,7 @@ Identification de risques d’utilisateurs malveillants (Evil User Story ou Abus
 
 == Fonctionnalitées
 Nous avons réunis toutes les fonctionnalitées que devra contenir l'intranet sous forme d'un schéma USE CASE.
-
+ Les fonctionnalités sont associées à l'utilisateur au quel elles sont destinées.
 [plantuml]
 ----
 
