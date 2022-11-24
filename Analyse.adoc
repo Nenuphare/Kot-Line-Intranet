@@ -61,11 +61,13 @@ package BDD {
 (Modifer fichiers) as UC5
 (Se connecter) as UC6
 (Réaliser stats) as UC7
+(Supprimer fichiers) as UC9
 }
 
 package App_Web {
 (Consulter stats) as UC2
 (Déposer fichers) as UC3
+(Consulter fichiers) as UC8
 }
 
 MyG --> UC1
@@ -75,6 +77,8 @@ MyG --> UC4
 MyG --> UC5
 MyG --> UC6
 MyG --> UC7
+MyG --> UC8
+MyG --> UC9
 
 
 
