@@ -48,16 +48,34 @@ Nous avons réunis toutes les fonctionnalitées que devra contenir l'intranet so
 
 [plantuml]
 ----
+
 @startuml
 
 left to right direction
 skinparam actorStyle awesome
 :Gestionnaire: as MyG
-MyG --> (Consulter stats)
-MyG --> (Consulter données BDD)
-MyG --> (Déposer fichiers)
-MyG --> (Modifier fichiers)
-MyG -->(Consulter fichiers)
+
+package BDD {
+(Consulter données) as UC1
+(Consulter fichiers) as UC4
+(Modifer fichiers) as UC5
+(Se connecter) as UC6
+(Réaliser stats) as UC7
+}
+
+package App_Web {
+(Consulter stats) as UC2
+(Déposer fichers) as UC3
+}
+
+MyG --> UC1
+MyG --> UC2
+MyG --> UC3
+MyG --> UC4
+MyG --> UC5
+MyG --> UC6
+MyG --> UC7
+
 
 
 @enduml
