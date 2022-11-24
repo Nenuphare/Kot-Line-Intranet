@@ -33,7 +33,16 @@ Identification de risques d’utilisateurs malveillants (Evil User Story ou Abus
 
 === Librairie Logicielle
 
-=== Implémentation des contraintes de séléctions
+=== Implémentation des contraintes de sélection
+Les contraintes de sélection sont au nombre de 3 et sont les suivantes:
+
+* L'âge (18-88 ans)
+* La taille des clients
+* Le numéro de carte de crédit
+
+Or il y'a des problème dans les données comme la taille qui ont des unités de mesures différentes selon les clients (Inch et centimètre).
+Il y a aussi des doublons de numéro de carte de crédit alors que le système ne permet pas le partage de carte de crédit.
+
 
 === Gestion des données hors contraintes
 
