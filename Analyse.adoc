@@ -17,13 +17,13 @@ Développer un Intranet pour une entreprise
 
 Définition du domaine métier représenté par un diagramme de classe des entités métiers.
 
-Choix (et argumentation) de la librairie logicielle que nous avons retenue pour lire un document CSV, à partir de l'article: https://www.baeldung.com/kotlin/csv-files
+Choix (et argumentation) de la librairie logicielle que nous avons retenue pour lire un document CSV, à partir de l'article: https://www.baeldung.com/kotlin/csv-files.
 
-Définir la façon dont nous comptons implémenter les 3 contraintes de sélection
+Définir la façon dont nous comptons implémenter les 3 contraintes de sélection.
 
 Présentation de la stratégie retenue par notre équipe concernant la gestion des données à problème.
 
-La façon dont nous envisagons de gérer le cas où l’utilisateur soumet les mêmes données en téléchargement, dans le but d’éviter d’inscrire plusieurs fois les mêmes données dans la base de données.
+La façon dont nous envisageons de gérer le cas où l’utilisateur soumet les mêmes données en téléchargement, dans le but d’éviter d’inscrire plusieurs fois les mêmes données dans la base de données.
 
 Identification de risques d’utilisateurs malveillants (Evil User Story ou Abuser Story).
 
@@ -34,32 +34,32 @@ Identification de risques d’utilisateurs malveillants (Evil User Story ou Abus
 === Librairie Logicielle
 
 === Implémentation des contraintes de sélection
-Les contraintes de sélection sont au nombre de 3 et sont les suivantes:
+Les contraintes de sélection sont au nombre de 3 et sont les suivantes :
 
 * L'âge (18-88 ans)
 * La taille des clients
 * Le numéro de carte de crédit
 
-Or il y'a des problème dans les données comme la taille qui ont des unités de mesures différentes selon les clients (Inch et centimètre). +
-Il y aura aussi des doublons de numéro de carte de crédit alors que le système ne permet pas le partage de carte de crédit.
+Or il y a des problème dans les données comme la taille qui ont des unités de mesures différentes selon les clients (Inches et centimètres). +
+Il y aura aussi des doublons de numéros de carte de crédit alors que le système ne permet pas le partage de carte de crédit.
 
-Nous avons donc décider d'implémenter ces contraintes de sélections sur une liste de tout les éléments comme des filtres.
+Nous avons donc décider d'implémenter ces contraintes de sélection sur une liste de tous les éléments comme des filtres.
 Nous allons traiter les incohérences dans la taille des clients en partant du fait que la taille en centimètre est la bonne taille.
-Ainsi nous allons insérer dans la base de donnée la taille en centimètre et convertir cette taille en Inch et s'en servir comme nouvelle valeures de tailles en Inch.
+Ainsi nous allons insérer dans la base de donnée la taille en centimètre et convertir cette taille en Inches et s'en servir comme nouvelle valeur de taille en Inches.
 
-Nous allons aussi faire en sorte que les clients qui renseigne une carte deja utilisé par un des utilisateurs ne soit pas enregistrer et la carte doublons sera placé dans un fichier CSV autre.
+Nous allons aussi faire en sorte que les clients qui renseignent une carte deja utilisée par un des utilisateurs ne soit pas enregistrée et la carte doublon sera placée dans un fichier CSV autre.
 
 === Gestion des données hors contraintes
 
 === Twin data
-(meme données rentrées par un meme utilisteur)
+(Mêmes données rentrées par un meme utilisateur)
 
 === Utilisateurs malveillants
 
 
-== Fonctionnalitées
-Nous avons réunis toutes les fonctionnalitées que devra contenir l'intranet sous forme d'un schéma USE CASE.
- Les fonctionnalités sont associées à l'utilisateur au quel elles sont destinées.
+== Fonctionnalités
+Nous avons réuni toutes les fonctionnalités que devra contenir l'intranet sous forme d'un schéma USE CASE.
+Les fonctionnalités sont associées à l'utilisateur auquel elles sont destinées.
 [plantuml]
 ----
 
