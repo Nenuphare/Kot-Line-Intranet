@@ -72,7 +72,7 @@ Les fonctionnalités sont associées à l'utilisateur auquel elles sont destiné
 
 left to right direction
 skinparam actorStyle awesome
-:Gestionnaire: as MyG
+:Gestionnaire: as MyG 
 
 package BDD {
 (Consulter données) as UC1
