@@ -81,10 +81,10 @@ Les contraintes de sélection sont au nombre de 3 et sont les suivantes :
 * La taille des clients
 * Le numéro de carte de crédit
 
-Or il y a des problème dans les données comme la taille qui ont des unités de mesures différentes selon les clients (Inches et centimètres). +
+Or il y a des problèmes dans les données comme la taille qui ont des unités de mesures différentes selon les clients (Inches et centimètres). +
 Il y aura aussi des doublons de numéros de carte de crédit alors que le système ne permet pas le partage de carte de crédit.
 
-Nous avons donc décider d'implémenter ces contraintes de sélection sur une liste de tous les éléments comme des filtres.
+Nous avons donc décidé d'implémenter ces contraintes de sélection sur une liste de tous les éléments comme des filtres.
 Nous allons traiter les incohérences dans la taille des clients en partant du fait que la taille en centimètre est la bonne taille.
 Ainsi nous allons insérer dans la base de donnée la taille en centimètre et convertir cette taille en Inches et s'en servir comme nouvelle valeur de taille en Inches.
 
