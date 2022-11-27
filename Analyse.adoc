@@ -103,9 +103,9 @@ Pour gérer ces données, nous allons les filtrer dès la création du compte cl
 
 === Twin data
 
-Les twin data sont les données qui sont rentrées à nouveau par l'utilisateur afin de les modifier ou de les mettre à jour.
+Les twins data sont les données qui sont rentrées à nouveau par l'utilisateur afin de les modifier ou de les mettre à jour.
 
-Si un nouveau compte client 
+Si un nouveau compte client est ajouté avec les mêmes données qu'un compte existant alors celui-ci sera aura son ancienne version écrasée par la nouvelle entrée.
 
 //=== Utilisateurs malveillants
 
