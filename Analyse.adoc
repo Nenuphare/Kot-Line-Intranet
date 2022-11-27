@@ -102,7 +102,10 @@ Pour gérer ces données, nous allons les filtrer dès la création du compte cl
 
 
 === Twin data
-(Mêmes données rentrées par un meme utilisateur)
+
+Les twin data sont les données qui sont rentrées à nouveau par l'utilisateur afin de les modifier ou de les mettre à jour.
+
+Si un nouveau compte client 
 
 //=== Utilisateurs malveillants
 
@@ -110,6 +113,7 @@ Pour gérer ces données, nous allons les filtrer dès la création du compte cl
 == Fonctionnalités
 Nous avons réuni toutes les fonctionnalités que devra contenir l'intranet sous forme d'un schéma USE CASE.
 Les fonctionnalités sont associées à l'utilisateur auquel elles sont destinées.
+
 [plantuml]
 ----
 
