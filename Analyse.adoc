@@ -76,7 +76,7 @@ Client "1" *-- "           *" Véhicule
 === Librairie Logicielle
 La librairie logicielle qui permet de lire les fichiers CSV est assez importante, car elle définit la charge de travail à effectuer, mais peut aussi servir à limiter les bugs.
 
-Ainsi la librairie que nous avons choisie est la bibliotèque Apache CSV, car elle est plus efficiente que le traitement avec Kotlin, mais elle est aussi la plus simple à mettre en place comparée à des bibliotèques aussi avancée telle que FasterXML Jacson.
+Ainsi la librairie que nous avons choisie est la bibliothèque Apache CSV, car elle est plus efficiente que le traitement avec Kotlin, mais elle est aussi la plus simple à mettre en place comparée à des bibliothèques aussi avancées telle que FasterXML Jackson.
 
 === Implémentation des contraintes de sélection
 Les contraintes de sélection sont au nombre de 3 et sont les suivantes :
@@ -96,6 +96,9 @@ Nous allons aussi faire en sorte que les clients qui renseignent une carte deja 
 
 === Gestion des données hors contraintes
 
+Nous allons déjà définir ce que sont les données hors contraintes, ce sont par exemple, des données absurdes tel qu'une personne qui mesurerait 2 mètres 80 ou bien une personne qui déclarerait avoir moins de 18ans (donc mineure).
+
+Pour gérer ces données, nous allons les filtrer dès la création du compte client. L'age et la taille du client devront rentrer dans une plage prédéfinie pour être validés. Il faudra également que le client renseigne une carte de crédit qui ne soit pas déjà utilisée par un autre client, sinon elle ne sera pas enregistrée et le doublon sera déplacé dans un fichier CSV.
 
 
 === Twin data
