@@ -35,20 +35,29 @@ Identification de risques d’utilisateurs malveillants (Evil User Story ou Abus
 ----
 @startuml
 
-Class Client{
+Class Login{
+String userName
+String droit
+String motDePasse
+modifierUsr()
+creerUsr()
+}
+
+Class Personne{
 String nom
 String prenom
 String genre
 String email
 String dateNaissance
 String adresse
-String vehicule
 Int tel
 Double taille
 Double poids
 Double latitude
 Double longitude
-
+}
+Class Client{
+String vehicule
 }
 Class Bancaire{
 String CCType
@@ -56,21 +65,20 @@ Int CCNum
 Int CVV2
 String CCExpires
 }
+
 Class Véhicule{
 Int annee
 String modele
 }
+
 Class Marque{
 String nomMarque
 }
-
+Personne <|-- Client
 Client <|-- Bancaire
 Véhicule <|-- Marque
-
-Client "1" *-- "           *" Véhicule
-
-
-
+Client "1" *- "*" Véhicule
+Personne "1" *--"1  " Login
 @enduml
 ----
 === Librairie Logicielle
