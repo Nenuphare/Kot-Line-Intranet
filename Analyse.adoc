@@ -74,6 +74,9 @@ Client "1" *-- "           *" Véhicule
 @enduml
 ----
 === Librairie Logicielle
+La librairie logicielle qui permet de lire les fichiers CSV est assez importante, car elle définit la charge de travail à effectuer, mais peut aussi servir à limiter les bugs.
+
+Ainsi la librairie que nous avons choisie est la bibliotèque Apache CSV, car elle est plus efficiente que le traitement avec Kotlin, mais elle est aussi la plus simple à mettre en place comparée à des bibliotèques aussi avancée telle que FasterXML Jacson.
 
 === Implémentation des contraintes de sélection
 Les contraintes de sélection sont au nombre de 3 et sont les suivantes :
@@ -92,6 +95,8 @@ Ainsi nous allons insérer dans la base de donnée la taille en centimètre et c
 Nous allons aussi faire en sorte que les clients qui renseignent une carte deja utilisée par un des utilisateurs ne soit pas enregistrée et la carte doublon sera placée dans un fichier CSV autre.
 
 === Gestion des données hors contraintes
+
+
 
 === Twin data
 (Mêmes données rentrées par un meme utilisateur)
