@@ -30,7 +30,48 @@ Identification de risques d’utilisateurs malveillants (Evil User Story ou Abus
 == Solutions
 
 === Diagramme de classe
+[plantuml]
+----
+@startuml
 
+Class Client{
+String nom
+String prenom
+String genre
+String email
+String dateNaissance
+String adresse
+String vehicule
+Int tel
+Double taille
+Double poids
+Double latitude
+Double longitude
+
+}
+Class Bancaire{
+String CCType
+Int CCNum
+Int CVV2
+String CCExpires
+}
+Class Véhicule{
+Int annee
+String modele
+}
+Class Marque{
+String nomMarque
+}
+
+Client <|-- Bancaire
+Véhicule <|-- Marque
+
+Client "1" *-- "           *" Véhicule
+
+
+
+@enduml
+----
 === Librairie Logicielle
 
 === Implémentation des contraintes de sélection
@@ -67,7 +108,7 @@ Les fonctionnalités sont associées à l'utilisateur auquel elles sont destiné
 
 left to right direction
 skinparam actorStyle awesome
-:Gestionnaire: as MyG
+:Gestionnaire: as MyG 
 
 package BDD {
 (Consulter données) as UC1
