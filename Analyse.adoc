@@ -11,7 +11,8 @@
 
 == Thème
 
-Développer un Intranet pour une entreprise
+Développer un Intranet pour une entreprise. +
+(Github : https://github.com/Nenuphare/Kot-Line-Intranet)
 
 == Objectif et Contraintes
 
@@ -95,7 +96,7 @@ Nous allons aussi faire en sorte que les clients qui renseignent une carte deja 
 === Twin data
 (Mêmes données rentrées par un meme utilisateur)
 
-=== Utilisateurs malveillants
+//=== Utilisateurs malveillants
 
 
 == Fonctionnalités
@@ -139,3 +140,4 @@ MyG --> UC9
 
 @enduml
 ----
+NAUGUET Benjamin, CAYE Damien, FALZONE Tonino, DELBOIS Yoan
