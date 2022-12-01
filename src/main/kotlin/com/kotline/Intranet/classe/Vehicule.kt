@@ -1,5 +1,6 @@
 package com.kotline.Intranet.classe
 
-class Vehicule {
-
-}
+open class Vehicule(
+    val annee: Int,
+    val model: String
+)
