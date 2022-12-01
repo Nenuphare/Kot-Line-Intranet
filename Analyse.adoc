@@ -50,6 +50,7 @@ String genre
 String email
 String dateNaissance
 String adresse
+Login login
 Int tel
 Double taille
 Double poids
@@ -57,7 +58,7 @@ Double latitude
 Double longitude
 }
 Class Client{
-String vehicule
+Vehicule vehicule
 }
 Class Bancaire{
 String CCType
