@@ -5,13 +5,15 @@ class Login(
     val droit: String,
     val motDePasse: String)
 {
-    fun isMDPMatching(motDePasse: String){
-        //TODO Faire matcher les mdp avec celui dans base de donnée
+    fun isMDPMatching(motDePasse: String): Boolean{
+        return this.motDePasse == motDePasse
     }
 
 
     fun modifierUser(){
         //TODO faire en sorte que les compte admins et modos puissent changer les infos des clients
+
+
     }
 
     fun creerUser(){

@@ -12,5 +12,4 @@ open class Personne(
     val poids: Double,
     val latitude: Double,
     val longitude: Double,
-    val login: Login
-*    )
+    val login: Login )
