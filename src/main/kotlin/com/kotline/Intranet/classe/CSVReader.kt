@@ -34,28 +34,15 @@ class CSVReader {
             val longitude = csvRecord.get(42)
             val dateNaissance = csvRecord.get(21)
 
-            //print the value to console
-            println("---------------")
-            println("ID: $id $titre$name $lastName")
-            println("Adresse mail: $email")
-            println("Tel: $tel")
-            println("Date Naissance: $dateNaissance")
-
             try {
                 val daten = dateNaissance.split('/').toTypedArray()
                 val moisNaissance = daten[0].toInt()
                 val jourNaissance = daten[1].toInt()
                 val anneeNaissance = daten[2].toInt()
                 val age = getAge(jourNaissance, moisNaissance, anneeNaissance)
-                println("Âge : $age")
             } catch (e: NumberFormatException) {
-                //c'est la ligne 1 c'est la rue
+                //La ligne 1
             }
-            println("Adresse: $street, $city $zipCode, $country")
-            println("Taille: $taille cm")
-            println("Poids: $poids kg")
-            println("Coordonées GPS: $latitude , $longitude")
-            println("---------------")
         }
     }
 
