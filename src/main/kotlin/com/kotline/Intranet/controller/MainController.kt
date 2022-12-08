@@ -17,7 +17,10 @@ class MainController {
         return "main/index"
     }
 
-
+    @GetMapping("/home")
+    fun home(model : Model): String{
+        return "lol"
+    }
 
 
 
