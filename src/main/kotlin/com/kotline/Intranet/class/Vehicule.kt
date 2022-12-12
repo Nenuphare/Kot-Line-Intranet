@@ -1,4 +1,4 @@
-package com.kotline.Intranet.classe
+package com.kotline.Intranet.`class`
 
 open class Vehicule(
     val annee: Int,
